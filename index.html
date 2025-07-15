@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Opiyo Brian - Full-Stack Developer specializing in React, Node.js, and modern web technologies" />
+    <meta name="keywords" content="full-stack developer, react, nodejs, web development, javascript" />
+    <meta name="author" content="Opiyo Brian" />
+    
+    <title>Opiyo Brian | Full-Stack Developer</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" />
+    <link rel="preload" href="images/profile.jpg" as="image" />
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="scripts/tailwind-config.js"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-900 font-sans overflow-x-hidden">
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <i class="fas fa-code text-blue-500"></i>
+          <span>Bronix</span>
+        </div>
+        
+        <div class="nav-actions">
+          <ul class="nav-menu">
+            <li><a href="#hero" class="nav-link" data-section="hero">Home</a></li>
+            <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+            <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+            <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+            <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+            <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+          </ul>
+          
+          <button id="dark-toggle" class="theme-toggle" title="Toggle dark mode" aria-label="Toggle dark mode">
+            <i class="fas fa-moon"></i>
+          </button>
+          
+          <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Open menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="mobile-menu">
+        <button id="close-mobile-menu" class="mobile-menu-close" aria-label="Close menu">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-nav-list">
+          <li><a href="#hero" class="nav-link-mobile" data-section="hero">Home</a></li>
+          <li><a href="#about" class="nav-link-mobile" data-section="about">About</a></li>
+          <li><a href="#projects" class="nav-link-mobile" data-section="projects">Projects</a></li>
+          <li><a href="#skills" class="nav-link-mobile" data-section="skills">Skills</a></li>
+          <li><a href="#experience" class="nav-link-mobile" data-section="experience">Experience</a></li>
+          <li><a href="#contact" class="nav-link-mobile" data-section="contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section" id="hero">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">Hi, I'm Opiyo Brian</h1>
+            <h2 class="hero-subtitle">I'm a Full-Stack Developer</h2>
+            <p class="hero-description">
+              I build clean, full-stack web applications using React, Node.js, and modern tools, 
+              turning your ideas into impactful digital experiences.
+            </p>
+            
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">View My Work</a>
+              <a href="cv/Opiyo_Brian_CV.pdf" download class="btn btn-secondary">
+                <i class="fas fa-download mr-2"></i>Download CV
+              </a>
+            </div>
+            
+            <div class="social-links">
+              <a href="https://github.com/Opiyo12" target="_blank" rel="noopener" class="social-link github" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/opiyobrian-dev/" target="_blank" rel="noopener" class="social-link linkedin" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://twitter.com/Bronix1998" target="_blank" rel="noopener" class="social-link twitter" title="X (Twitter)">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="28" height="28" fill="none">
+                  <rect width="32" height="32" rx="16" fill="white"/>
+                  <path d="M10 10L22 22M22 10L10 22" stroke="#111" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+              </a>
+              <a href="https://youtube.com/youryoutube" target="_blank" rel="noopener" class="social-link youtube" title="YouTube">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="https://wa.me/25476608065" target="_blank" rel="noopener" class="social-link whatsapp" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+          
+          <div class="hero-image">
+            <img src="images/profile.jpg" alt="Opiyo Brian - Full-Stack Developer" class="profile-image" />
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="section about-section" id="about">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+          <div class="about-content">
+            <p class="about-text">
+              I'm a passionate full-stack web developer with expertise in creating fast, scalable, 
+              and user-friendly applications. I love solving complex problems with elegant code and 
+              building tools that make a real difference in people's lives.
+            </p>
+            <p class="about-text">
+              With experience in both frontend and backend technologies, I bring ideas to life 
+              through clean, maintainable code and thoughtful user experiences.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="section projects-section" id="projects">
+        <div class="container">
+          <h2 class="section-title">Projects</h2>
+          <div class="projects-grid">
+            <!-- Project 1 -->
+            <article class="project-card">
+              <div class="project-image">
+                <img src="images/finance-tracker.jpg" alt="Finka - Personal Finance Tracker" loading="lazy" />
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Finka</h3>
+                <p class="project-description">
+                  A personal finance app to track expenses and savings, visualize spending habits, 
+                  and set savings goals. Helps users gain control over their finances with insightful charts.
+                </p>
+                <div class="project-tech">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" title="React" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" title="Node.js" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" title="MySQL" />
+                  <span class="tech-badge">Chart.js</span>
+                </div>
+                <div class="project-actions">
+                  <a href="#" class="btn btn-primary btn-sm">Live Demo</a>
+                  <a href="#" class="btn btn-secondary btn-sm">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card">
+              <div class="project-image">
+                <img src="images/job-platform.jpg" alt="SkillLink - Job Platform" loading="lazy" />
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">SkillLink</h3>
+                <p class="project-description">
+                  A modern job board for posting and searching jobs, with advanced filtering, 
+                  company profiles, and application tracking. Empowers job seekers and employers 
+                  to connect efficiently and securely.
+                </p>
+                <div class="project-tech">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" title="React" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" title="Node.js" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" title="PostgreSQL" />
+                  <span class="tech-badge">Express</span>
+                </div>
+                <div class="project-actions">
+                  <a href="#" class="btn btn-primary btn-sm">Live Demo</a>
+                  <a href="#" class="btn btn-secondary btn-sm">GitHub</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="section skills-section" id="skills">
+        <div class="container">
+          <h2 class="section-title">Skills</h2>
+          <div class="skills-grid" id="skills-container">
+            <!-- Skills will be populated by JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section class="section experience-section" id="experience">
+        <div class="container">
+          <h2 class="section-title">Experience</h2>
+          <div class="experience-timeline">
+            <div class="experience-item">
+              <div class="experience-marker"></div>
+              <div class="experience-content">
+                <h3 class="experience-company">Diginex Solutions Ltd</h3>
+                <h4 class="experience-role">Founder & Developer</h4>
+                <p class="experience-period">2024 - Present</p>
+                <div class="experience-tech">
+                  <span class="tech-badge">React</span>
+                  <span class="tech-badge">Node.js</span>
+                </div>
+                <p class="experience-description">
+                  Started a self-driven initiative to explore how ICT can address real-world challenges 
+                  across sectors like healthcare, education, and small business support. Though still early, 
+                  this journey reflects a deep commitment to learning by doing, building meaningful solutions, 
+                  and staying grounded in community impact.
+                </p>
+              </div>
+            </div>
+
+            <div class="experience-item">
+              <div class="experience-marker"></div>
+              <div class="experience-content">
+                <h3 class="experience-company">Kumalo Technologies</h3>
+                <h4 class="experience-role">Full Stack Developer</h4>
+                <p class="experience-period">2023 - Present</p>
+                <div class="experience-tech">
+                  <span class="tech-badge">React</span>
+                  <span class="tech-badge">Node.js</span>
+                  <span class="tech-badge">Spring Boot</span>
+                  <span class="tech-badge">PostgreSQL</span>
+                </div>
+                <p class="experience-description">
+                  Collaborated closely with senior developers to build backend systems using Spring Boot, 
+                  MySQL, PostgreSQL, and Node.js when needed.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="section contact-section" id="contact">
+        <div class="container">
+          <h2 class="section-title">Contact</h2>
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Your Email" class="form-input" required />
+              <span id="email-error" class="form-error">Please enter a valid email address.</span>
+            </div>
+            
+            <div class="form-group">
+              <textarea id="message" placeholder="Your Message" rows="5" class="form-input" required></textarea>
+              <span id="message-error" class="form-error">Message must be at least 10 characters.</span>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane mr-2"></i>Send Message
+            </button>
+            
+            <div id="form-success" class="form-success">
+              <i class="fas fa-check-circle mr-2"></i>Thank you! Your message has been sent.
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Hire Me Section -->
+      <section class="section hire-section">
+        <div class="container">
+          <div class="hire-card">
+            <h3 class="hire-title">
+              <i class="fas fa-briefcase"></i>
+              Ready to Work Together?
+            </h3>
+            <p class="hire-description">
+              I'm available for freelance projects and full-time opportunities. 
+              Let's create something amazing together!
+            </p>
+            <div class="hire-contacts">
+              <a href="mailto:opiyobrian81998@gmail.com" class="contact-item email">
+                <i class="fas fa-envelope"></i>
+                <span>opiyobrian81998@gmail.com</span>
+              </a>
+              <a href="tel:+254766998049" class="contact-item phone">
+                <i class="fas fa-phone"></i>
+                <span>+254 766 998 049</span>
+              </a>
+              <a href="tel:+254776608065" class="contact-item phone">
+                <i class="fas fa-phone"></i>
+                <span>+254 776 608 065</span>
+              </a>
+              <a href="https://wa.me/25476608065" target="_blank" rel="noopener" class="contact-item whatsapp">
+                <i class="fab fa-whatsapp"></i>
+                <span>WhatsApp</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p class="footer-text">&copy; 2024 Bronix. All rights reserved.</p>
+          <div class="footer-social">
+            <a href="https://github.com/opiyo12" title="GitHub" class="footer-link">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/opiyobrian-dev/" title="LinkedIn" class="footer-link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:opiyobrian81998@gmail.com" title="Email" class="footer-link">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/data.js"></script>
+    <script src="scripts/components.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
